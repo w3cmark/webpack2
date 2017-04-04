@@ -1,0 +1,8 @@
+.a-div{
+	width: 100px;
+	height: 100px;
+	boder: 1px solid #c60;
+	background: #f60;
+	display: flex;
+	transition:opacity 0.3s ease;
+}
