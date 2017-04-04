@@ -12,7 +12,7 @@ module.exports = {
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		publicPath: 'file:///H:/GitHub/webpack2/demo01/dist/',
+		publicPath: '/dist/',
 		filename: 'js/[name].js'
 	},
 	module: {
@@ -114,5 +114,8 @@ module.exports = {
 			title: 'My Webpack App'
 		}),
 		new ExtractTextPlugin('style/[name]_[hash:8].css')
-	]
+	],
+	devServer: {
+		contentBase: __dirname+'/dist'
+	}
 }
